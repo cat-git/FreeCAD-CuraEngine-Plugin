@@ -49,8 +49,8 @@ class TDPrinting ( Workbench ):
 	MenuText = "3D Printing"
 	ToolTip = "Workbench for 3D Printing"
 
-        def GetClassName(self):
-               return "Gui::PythonWorkbench"
+	def GetClassName(self):
+		return "Gui::PythonWorkbench"
 
 	def Initialize(self):
 		#import myModule1, myModule2
@@ -62,11 +62,11 @@ class TDPrinting ( Workbench ):
 		Log ("Loading MyModule... done\n")
 
 	def Activated(self):
-               # do something here if needed...
+		# do something here if needed...
 		Msg ("MyWorkbench.Activated()\n")
 
 	def Deactivated(self):
-               # do something here if needed...
+		# do something here if needed...
 		Msg ("MyWorkbench.Deactivated()\n")
 
 FreeCADGui.addWorkbench(TDPrinting)
